@@ -1,6 +1,6 @@
-use testcontainers::*;
+use diesel::{Connection, PgConnection};
 use testcontainers::images::postgres::Postgres;
-use diesel::{PgConnection, Connection};
+use testcontainers::*;
 
 #[test]
 fn connect2pg() {
